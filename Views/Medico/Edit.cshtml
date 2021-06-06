@@ -1,0 +1,81 @@
+@model Turnos.Models.Medico
+
+
+
+
+<h4>Medico</h4>
+<hr />
+<div class="row">
+    <div >
+        <form class="col s12" asp-action="Edit">
+            <div asp-validation-summary="ModelOnly"></div>
+            <input type="hidden" asp-for="IdMedico" />
+           <div class="row">
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input asp-for="Nombre" type="text" class="validate">
+                    <label asp-for="Nombre"></label>
+                     <span asp-validation-for="Nombre" ></span>
+                </div>
+                <div class="input-field col s6">
+                    <div class="input-field col s6">           
+                    <input asp-for="Apellido" type="text" class="validate">
+                    <label asp-for="Apellido"></label>
+                     <span asp-validation-for="Apellido" ></span>
+                </div>
+            </div>
+            
+            <div class="input-field col s6">
+                <i class="material-icons prefix">home</i>
+                <input asp-for="Direccion" type="text" class="validate">
+                <label asp-for="Direccion"></label>
+                 <span asp-validation-for="Direccion" ></span>
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">phone</i>
+                <input asp-for="Telefono" type="text" class="validate">
+                <label asp-for="Telefono"></label>
+                 <span asp-validation-for="Telefono" ></span>
+            </div>
+
+             <div class="input-field col s12">
+                <i class="material-icons prefix">email</i>
+                <input asp-for="Email" type="text" class="validate">
+                <label asp-for="Email"></label>
+                 <span asp-validation-for="Email" ></span>
+            </div>
+
+             <div class="input-field col s6">
+                <i class="material-icons prefix">event</i>
+                <input asp-for="HorarioAtencionDesde" type="text" class="timepicker">
+                <label asp-for="HorarioAtencionDesde"></label>
+                 <span asp-validation-for="HorarioAtencionDesde" ></span>
+            </div>
+             <div class="input-field col s6">
+                <i class="material-icons prefix">event</i>
+                <input asp-for="HorarioAtencionHasta" type="text" class="timepicker">
+                <label asp-for="HorarioAtencionHasta"></label>
+                 <span asp-validation-for="HorarioAtencionHasta" ></span>
+            </div>
+
+
+            <div class="input-field col s12">
+                 <i class="material-icons prefix">grading</i>
+                <select name="IdEspecialidad"  asp-items="ViewBag.ListaEspecialidades"></select>
+            </div>
+             <div class="row">
+
+            <div class="input-field col s6" >
+                <button class="btn waves-effect waves-light cyan darken-3" type="submit"  value="Grabar">Grabar
+                    <i class="material-icons left">send</i></button>
+               
+            </div>
+            <div class="input-field col s6">
+                <a class="waves-effect waves-light btn cyan darken-4" asp-action="Index"><i class="material-icons left">reply</i>Volver</a>
+               
+            </div>
+
+
+        </form>
+    </div>
+</div>

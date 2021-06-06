@@ -1,8 +1,61 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<br>
+<br>
+<div class="row">
+    <div class="col s12 m4">
+        <div class="card">
+            <div class="card-image center blue-grey lighten-2">
+                <i class="material-icons large white-text">category</i>
+               
+                <a class="btn-floating halfway-fab waves-effect waves-light blue lighten-3" asp-controller="Especialidad" asp-action="Create"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+                 <span class="card-title">Especialidades:</span>
+                <p>Aquí podrás dar de alta nuevas especialidades, modificarlas y borrarlas. A la espera de ser asignadas a un medico.</p>
+            </div>
+            <div class="card-action blue-grey lighten-2">
+                <a asp-controller="Especialidad" asp-action="Index" class="white-text">ver más</a>
+                
+            </div>
+        </div>
+    </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+     <div class="col s12 m4">
+        <div class="card">
+            <div class="card-image center blue-grey lighten-2">
+                <i class="material-icons large white-text">medication</i>
+               
+                <a class="btn-floating halfway-fab waves-effect waves-light blue lighten-3" asp-controller="Medico" asp-action="Create"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+                 <span class="card-title">Médicos:</span>
+                <p>Aquí podrás dar de alta nuevos médicos, modificar sus datos y relacionarlos con su especialidad.</p>
+            </div>
+            <div class="card-action blue-grey lighten-2">
+                <a asp-controller="Medico" asp-action="Index" class="white-text">ver más</a>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col s12 m4">
+        <div class="card">
+            <div class="card-image center blue-grey lighten-2">
+                <i class="material-icons large white-text">assignment_ind</i>
+               
+                <a class="btn-floating halfway-fab waves-effect waves-light blue lighten-3" asp-controller="Paciente" asp-action="Create"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+                 <span class="card-title">Paciente:</span>
+                <p>Aquí podrás dar de alta nuevos pacientes, modificar sus datos o borrarlos de la base de datos.</p>
+            </div>
+            <div class="card-action blue-grey lighten-2">
+                <a asp-controller="Paciente" asp-action="Index" class="white-text">ver más</a>
+                
+            </div>
+        </div>
+    </div>
+
 </div>

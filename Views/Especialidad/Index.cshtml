@@ -1,0 +1,31 @@
+@model IEnumerable<Turnos.Models.Especialidad>
+
+<p>
+    <a asp-action="Create" class="btn-floating btn-large cyan darken-1"><i class="material-icons">note_add</i></a>
+</p>
+
+<table class="responsive-table highlight z-depth-3 light-blue lighten-5">
+    <thead class=" blue-grey lighten-3">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Descripcion)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @*Aqui colocaremos, mas adelante el codigo para mostrar registros de la bd.*@
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descripcion)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdEspecialidad"><i class="material-icons">edit</i></a>
+                    <a asp-action="Delete" asp-route-id="@item.IdEspecialidad"><i class="material-icons blue-text text-darken-2">delete</i></a>
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+</table>

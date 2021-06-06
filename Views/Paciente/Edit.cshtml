@@ -1,0 +1,54 @@
+@model Turnos.Models.Paciente
+
+<h4>Paciente</h4>
+<div class="row">
+    <form class="col s12" asp-action="Edit">
+        <div asp-validation-summary="ModelOnly"></div>
+        <input type="hidden" asp-for="IdPaciente" />
+        <div class="row">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <label asp-for="Nombre"></label>
+                <input asp-for="Nombre" type="text" class="validate" />
+                <span asp-validation-for="Nombre"></span>
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <label asp-for="Apellido"></label>
+                <input asp-for="Apellido" type="text" class="validate" />
+                <span asp-validation-for="Apellido"></span>
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">home</i>
+                <label asp-for="Direccion"></label>
+                <input asp-for="Direccion" type="text" class="validate" />
+                <span asp-validation-for="Direccion"></span>
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">phone</i>
+                <label asp-for="Telefono"></label>
+                <input asp-for="Telefono" type="text" class="validate" />
+                <span asp-validation-for="Telefono"></span>
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">email</i>
+                <label asp-for="Email"></label>
+                <input asp-for="Email" type="text" class="validate" />
+                <span asp-validation-for="Email"></span>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <button class="btn waves-effect waves-light cyan darken-3" type="submit" value="Grabar">Grabar
+                        <i class="material-icons left">send</i></button>
+                </div>
+
+                <div class="input-field col s6">
+                    <a class="waves-effect waves-light btn cyan darken-4" asp-action="Index"><i class="material-icons left">reply</i>Volver</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div>
+
+</div>

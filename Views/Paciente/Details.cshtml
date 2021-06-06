@@ -1,0 +1,49 @@
+@model Turnos.Models.Paciente
+
+
+<h4>Paciente</h4>
+
+<div class="row">
+    <div class="col s12 m6">
+        <div class="card hoverable blue-grey darken-2">
+            <div class="card-content white-text">
+                <span class="card-title">
+                    <h6> <b> @Html.DisplayFor(modelo => modelo.Nombre) @Html.DisplayFor(modelo => modelo.Apellido)</b>
+                    </h6>
+                </span>
+                <hr />
+                <dl>
+                    <dt>
+                        @Html.DisplayNameFor(modelo => modelo.Direccion) : @Html.DisplayFor(modelo => modelo.Direccion)
+                    </dt>
+
+                    <dt>
+                        @Html.DisplayNameFor(modelo => modelo.Telefono) : @Html.DisplayFor(modelo => modelo.Telefono)
+                    </dt>
+
+                    <dt>
+                        @Html.DisplayNameFor(modelo => modelo.Email) : @Html.DisplayFor(modelo => modelo.Email)
+                    </dt>
+
+                </dl>
+
+            </div>
+            <div class="card-action blue-grey darken-1">
+                <form asp-action="Delete">
+                    <input type="hidden" asp-for="IdPaciente" />
+                    <a type="submit" value="Editar" class="waves-effect waves-light btn-small blue-grey lighten-2"
+                        asp-action="Edit" asp-route-id="@Model.IdPaciente">Editar</a>
+                    <a class="waves-effect waves-light btn-small blue-grey lighten-2 right"
+                        asp-action="Index">Volver</a>
+                </form>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</div>
+<div>
+   
+</div>

@@ -1,0 +1,56 @@
+@model IEnumerable<Turnos.Models.Paciente>
+
+
+<p>
+    <a asp-action="Create" class="btn-floating btn-large cyan darken-1"><i class="material-icons">person_add</i></a>
+</p>
+
+<table class="responsive-table highlight z-depth-3 light-blue lighten-5">
+    <thead class=" blue-grey lighten-3">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Nombre)</th>
+            <th>@Html.DisplayNameFor(model => model.Apellido)</th>
+            <th>@Html.DisplayNameFor(model => model.Direccion)</th>
+            <th>@Html.DisplayNameFor(model => model.Telefono)</th>
+            <th>@Html.DisplayNameFor(model => model.Email)</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @*Aqui colocaremos, mas adelante el codigo para mostrar registros de la bd.*@
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Apellido)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Direccion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefono)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+               
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdPaciente"><i class="material-icons">edit</i></a>
+                    <a asp-action="Details" asp-route-id="@item.IdPaciente"><i class="material-icons grey-text">more_vert</i></a>
+                    <a asp-action="Delete" asp-route-id="@item.IdPaciente"><i class="material-icons blue-text text-darken-2">delete</i></a>
+                </td>
+
+            </tr>
+
+
+
+        }
+
+
+
+    </tbody>
+</table>
