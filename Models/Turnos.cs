@@ -6,7 +6,7 @@ namespace Turnos.Models
     public class Turno
     {
         [Key]
-        public string IdTurno { get; set; }
+        public int IdTurno { get; set; }
         public int IdPaciente { get; set; }
         public int IdMedico { get; set; }
         [Display(Name = "Fecha hora inicio.")]

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E4c4xmrpdNUAQXGTOMQZjTkMVt1rA4SS5ZWMdDb/wQimU5sWI0l2mMwT4ynBxDnqDVut7I0F4VKWBsHwLheYCQ==",
+  "dgSpecHash": "iSNJ7NHdWGTKve7+cnrIwWONhC3nkknYp3E7HTHcHz74cOM2B5goubrWare0eRclAiqEJD1QgcPzb4kaas8XnQ==",
   "success": true,
   "projectFilePath": "C:\\udemy\\NetCoreProyectoCompleto\\Turnos\\Turnos.csproj",
   "expectedPackageFiles": [
@@ -126,7 +126,8 @@
     "C:\\Users\\Personal\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Personal\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Personal\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Personal\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\Personal\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\Personal\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.5\\microsoft.netcore.app.host.win-x64.5.0.5.nupkg.sha512"
   ],
   "logs": []
 }

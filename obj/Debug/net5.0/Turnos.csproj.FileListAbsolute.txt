@@ -17,7 +17,6 @@ C:\udemy\NetCoreProyectoCompleto\Turnos\obj\Debug\net5.0\Turnos.MvcApplicationPa
 C:\udemy\NetCoreProyectoCompleto\Turnos\obj\Debug\net5.0\Turnos.RazorAssemblyInfo.cache
 C:\udemy\NetCoreProyectoCompleto\Turnos\obj\Debug\net5.0\Turnos.RazorAssemblyInfo.cs
 C:\udemy\NetCoreProyectoCompleto\Turnos\obj\Debug\net5.0\staticwebassets\Turnos.StaticWebAssets.Manifest.cache
-C:\udemy\NetCoreProyectoCompleto\Turnos\obj\Debug\net5.0\staticwebassets\Turnos.StaticWebAssets.xml
 C:\udemy\NetCoreProyectoCompleto\Turnos\obj\Debug\net5.0\scopedcss\bundle\Turnos.styles.css
 C:\udemy\NetCoreProyectoCompleto\Turnos\obj\Debug\net5.0\Turnos.TagHelpers.input.cache
 C:\udemy\NetCoreProyectoCompleto\Turnos\obj\Debug\net5.0\Turnos.TagHelpers.output.cache
@@ -156,3 +155,4 @@ C:\udemy\NetCoreProyectoCompleto\Turnos\obj\Debug\net5.0\Razor\Views\Medico\Deta
 C:\udemy\NetCoreProyectoCompleto\Turnos\obj\Debug\net5.0\Razor\Views\Medico\Edit.cshtml.g.cs
 C:\udemy\NetCoreProyectoCompleto\Turnos\obj\Debug\net5.0\Razor\Views\Medico\Index.cshtml.g.cs
 C:\udemy\NetCoreProyectoCompleto\Turnos\obj\Debug\net5.0\Turnos.csproj.AssemblyReference.cache
+C:\udemy\NetCoreProyectoCompleto\Turnos\obj\Debug\net5.0\Razor\Views\Turno\Index.cshtml.g.cs
